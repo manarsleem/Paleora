@@ -1,0 +1,227 @@
+/* ================= FOOTER ================= */
+
+.footer {
+    margin-top: 40px;
+}
+
+.fot-container {
+    width: 100%;
+    background-color: #632F2F;
+    color: #F6EFE3;
+    overflow: hidden;
+}
+
+/* ================= HEAD FOOTER ================= */
+
+.head-footer {
+    width: 90%;
+    min-height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.right-head-footer {
+    text-align: center;
+}
+
+.right-head-footer > h2 {
+    margin-bottom: 15px;
+    color: #F6EFE3;
+}
+
+/* ================= NEWSLETTER ================= */
+
+.middel-head-footer {
+    display: flex;
+    align-items: center;
+}
+
+.middel-head-footer input {
+    padding: 18px;
+    margin: 0 5px 0 0;
+    width: 350px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    background-color: #F6EFE3;
+    color: #632F2F;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.middel-head-footer .fot-btn {
+    padding: 18px 22px;
+    margin-left: 5px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    color: #F6EFE3;
+    background-color: #B85C3A;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.middel-head-footer .fot-btn:hover {
+    transform: scale(1.08);
+    background-color: #E3D0B5;
+    color: #632F2F;
+}
+
+/* ================= SOCIAL ICONS ================= */
+
+.left-head-footer {
+    display: flex;
+    align-items: center;
+}
+
+.left-head-footer i {
+    font-size: 30px;
+    color: #E3D0B5;
+    padding: 15px;
+    transition: 0.4s ease;
+}
+
+.left-head-footer i:hover {
+    transform: scale(1.2);
+    color: #B85C3A;
+}
+
+/* ================= LINE FOOTER ================= */
+
+.line-footer {
+    width: 90%;
+    height: 2px;
+    background-color: #9A7652;
+    margin: 0 auto;
+}
+
+/* ================= BODY FOOTER ================= */
+
+.body-footer {
+    width: 90%;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 45px 0;
+}
+
+/* ================= FOOTER IMAGE ================= */
+
+.body-footer .footer-img {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-footer .footer-img img {
+    width: 260px;
+    height: 180px;
+    margin: 0;
+    border-radius: 40px;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.body-footer .footer-img img:hover {
+    transform: scale(1.08);
+}
+
+/* ================= LISTS ================= */
+
+.body-footer .lists {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 0;
+}
+
+.lists .list {
+    flex: 1;
+}
+
+.lists .list > h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #E3D0B5;
+}
+
+.lists .list ul {
+    padding: 0;
+    margin: 0;
+}
+
+.lists .list li {
+    list-style-type: none;
+    font-size: 18px;
+    padding: 8px;
+    text-align: center;
+}
+
+.lists .list li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #F6EFE3;
+    transition: 0.3s ease;
+}
+
+.lists .list li a:hover {
+    transform: translateX(5px);
+    text-decoration: underline;
+    color: #B85C3A;
+}
+
+/* ================= LAST FOOTER ================= */
+
+.last-footer {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid rgba(227, 208, 181, 0.3);
+}
+
+.last-footer i {
+    font-size: 25px;
+    margin: 0 10px;
+    color: #F6EFE3;
+    animation: change-color 1s infinite alternate;
+}
+
+@keyframes change-color {
+    0% {
+        color: #F6EFE3;
+        transform: scale(0.8);
+    }
+
+    100% {
+        color: #B85C3A;
+        transform: scale(1);
+    }
+}
+
+.last-footer a {
+    display: inline-block;
+    font-size: 22px;
+    color: #B85C3A;
+    margin-left: 10px;
+    text-decoration: none;
+    padding-bottom: 5px;
+    transition: 0.3s ease;
+}
+
+.last-footer a:hover {
+    text-decoration: underline;
+    letter-spacing: 1px;
+    color: #E3D0B5;
+}

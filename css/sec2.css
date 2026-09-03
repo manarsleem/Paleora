@@ -1,0 +1,464 @@
+/* ================= SEC 4 =========================================================== */
+.sec-4 {
+  margin-top: 40px;
+}
+
+.sec4-container {
+  width: 90%;
+
+  height: 700px;
+
+  margin: auto;
+}
+
+.sec4-container > h2 {
+  text-align: center;
+
+  font-size: 40px;
+
+  font-style: italic;
+
+  margin-top: 50px;
+
+  color: #632f2f; /* Deep Burgundy */
+}
+
+.sec4-content {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-top: 50px;
+}
+
+/* ================= ARROWS ================= */
+
+.sec4-content .left-icon,
+.sec4-content .right-icon {
+  width: 45px;
+
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-decoration: none;
+
+  color: #632f2f; /* Deep Burgundy */
+
+  font-size: 22px;
+
+  border: 2px solid #9a7652; /* Antique Bronze */
+
+  border-radius: 50%;
+
+  transition: 0.3s;
+
+  flex-shrink: 0;
+}
+
+.sec4-content .left-icon:hover,
+.sec4-content .right-icon:hover {
+  background-color: #632f2f; /* Deep Burgundy */
+
+  color: #f6efe3; /* Fossil Cream */
+
+  border-color: #632f2f;
+}
+
+/* ================= CARDS ================= */
+
+.sec4-content .sec4-cards {
+  width: 90%;
+
+  display: flex;
+
+  gap: 20px;
+}
+
+.sec4-content .sec4-cards .sec4-card {
+  width: 25%;
+
+  height: 500px;
+}
+
+/* ================= IMAGE ================= */
+
+.sec4-cards .sec4-card .sec4-card-img {
+  position: relative;
+
+  width: 100%;
+
+  height: 500px;
+
+  overflow: hidden;
+}
+
+/* الصورة الأصلية */
+
+.sec4-cards .sec4-card .sec4-card-img img {
+  position: relative;
+
+  width: 100%;
+
+  height: 500px;
+
+  overflow: hidden;
+
+  border-radius: 60px 30px 60px 30px;
+}
+
+.sec4-cards .sec4-card .sec4-card-img > img {
+  width: 100%;
+
+  height: 450px;
+
+  object-fit: cover;
+
+  display: block;
+
+  border-radius: 60px 30px 60px 30px;
+}
+
+/* ================= HOVER IMAGE ================= */
+
+/* الصورة الثانية */
+
+.sec4-card-img .hover-img {
+  position: absolute;
+
+  top: -200%;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 0;
+
+  object-fit: cover;
+
+  z-index: 2;
+
+  transition: top 0.6s ease;
+
+  border-radius: 60px 30px 60px 30px;
+}
+
+.sec4-card-img:hover .hover-img {
+  top: -90%;
+}
+
+/* ================= ICONS ================= */
+
+.sec4-card .sec4-card-img .img-icons {
+  position: absolute;
+
+  bottom: 10%;
+
+  left: 10%;
+
+  display: flex;
+
+  align-items: center;
+
+  z-index: 3;
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  transform: translateY(20px);
+
+  transition: 0.4 ease;
+}
+
+.sec4-card .sec4-card-img:hover .img-icons {
+  opacity: 1;
+
+  visibility: visible;
+
+  transform: translateY(0);
+}
+
+.sec4-card:has(.sec4-card-img:hover) .sec4-card-info h2 {
+  color: #b85c3a; /* Burnt Terracotta */
+}
+
+.sec4-card .sec4-card-img .img-icons i {
+  font-size: 25px;
+
+  margin: 10px;
+
+  padding: 20px;
+
+  border-radius: 20px 10px 20px 10px;
+
+  background-color: #632f2f; /* Deep Burgundy */
+
+  color: #f6efe3; /* Fossil Cream */
+
+  transition: 0.3s;
+}
+
+.sec4-card .sec4-card-img .img-icons i:hover {
+  background-color: #b85c3a; /* Burnt Terracotta */
+
+  color: #f6efe3; /* Fossil Cream */
+
+  transform: translateY(-5px);
+}
+
+/* ================= CARD INFO ================= */
+
+.sec4-cards .sec4-card .sec4-card-info {
+  background-color: #f6efe3; /* Fossil Cream */
+
+  text-align: center;
+
+  margin-top: -10px;
+
+  position: relative;
+
+  z-index: 5;
+
+  padding: 10px;
+}
+
+.sec4-cards .sec4-card .sec4-card-info h2 {
+  font-size: 28px;
+
+  margin-bottom: 10px;
+
+  color: #632f2f; /* Deep Burgundy */
+}
+
+.sec4-cards .sec4-card .sec4-card-info h3 {
+  margin: 8px 0;
+
+  color: #76665a; /* Muted Taupe */
+}
+
+/* ========================= sec 5 ==================================== */
+.sec-5 {
+  margin-top: 40px;
+}
+
+.sec5-container {
+  width: 100%;
+
+  height: 850px;
+
+  margin: auto;
+
+  background-color: #632f2f; /* Deep Burgundy */
+}
+
+.sec5-container > h2 {
+  text-align: center;
+
+  margin: 40px;
+
+  padding-top: 20px;
+
+  font-size: 40px;
+
+  font-style: italic;
+
+  color: #f6efe3; /* Fossil Cream */
+}
+
+.sec5-content {
+  margin-top: 30px;
+
+  margin-left: 30px;
+}
+
+.sec5-content .sec5-cards {
+  width: 95%;
+
+  height: 700px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-content: center;
+  margin: auto;
+}
+
+.sec5-content .sec5-cards .sec5-card {
+  width: 30%;
+
+  height: auto;
+
+  overflow: hidden;
+
+  border-radius: 50px 20px 50px 20px;
+}
+
+.sec5-content .sec5-cards .sec5-card img {
+  border-radius: 50px 20px 50px 20px;
+}
+
+.sec5-content .sec5-cards .sec5-card img:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.sec5-cards .sec5-card .sec5-card-info h3 {
+  margin: 20px 0;
+
+  font-size: 25px;
+  color: #f6efe3;
+
+  transition: color 0.3s ease;
+}
+
+.sec5-cards .sec5-card:has(img:hover) .sec5-card-info h3,
+.sec5-cards .sec5-card:has(img:hover) .sec5-card-info a {
+ color: #b85c3a; /* Burnt Terracotta */
+
+  transform: scale(1.05);
+
+  margin-left: 15px;
+}
+.sec5-cards .sec5-card:hover .sec5-card-info h3{
+  color: #b85c3a; /* Burnt Terracotta */
+  margin-left: 2px;
+}
+.sec5-cards .sec5-card .sec5-card-info p {
+  margin: 30px 0;
+
+  font-size: 20px;
+
+  color: #f6efe3; /* Fossil Cream */
+}
+
+.sec5-cards .sec5-card .sec5-card-info a {
+  margin: 20px 0;
+
+  font-size: 25px;
+  margin-left: 4px;
+
+  color: #f6efe3; /* Fossil Cream */
+}
+.sec5-cards .sec5-card .sec5-card-info a:hover{
+  color: #b85c3a; /* Burnt Terracotta */
+  word-spacing: 2px;
+  transform: scale(1.15);
+  transition: 0.2s ease;
+
+}
+
+.sec5-cards .sec5-card .sec5-card-info a i {
+  margin-left: 10px;
+
+  font-size: 20px;
+}
+
+/* =================== sec 6 =============== */
+
+.sec-6 {
+  margin-top: 40px;
+}
+
+.sec6-container {
+  width: 100%;
+
+  height: 250px;
+
+  margin: auto;
+}
+
+.icon-cards {
+  display: flex;
+
+  justify-content: space-evenly;
+
+  text-align: center;
+}
+
+.icon-cards .icon-card {
+  padding: 20px;
+}
+
+.icon-cards .icon-card .icon {
+  position: relative;
+
+  width: 80px;
+
+  height: 80px;
+
+  overflow: hidden;
+
+  margin: auto;
+}
+
+/* كل icons */
+
+.icon-cards .icon-card .icon i {
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 70px;
+
+  transition: transform 0.2s ease;
+}
+
+.icon-cards .icon-card .icon .icon-normal {
+  color: #76665a; /* Muted Taupe */
+
+  transform: translateY(0);
+}
+
+.icon-cards .icon-card .icon .icon-hover {
+  color: #b85c3a; /* Burnt Terracotta */
+
+  transform: translateY(100%);
+}
+
+.icon-cards .icon-card .icon:hover .icon-normal {
+  transform: translateY(-100%);
+}
+
+.icon-cards .icon-card .icon:hover .icon-hover {
+  transform: translateY(0);
+}
+
+.icon-cards .icon-card h2 {
+  margin: 20px 0;
+
+  font-size: 30px;
+
+  color: #29221e; /* Dark Cocoa */
+}
+
+.icon-cards .icon-card p {
+  margin-bottom: 20px;
+
+  font-size: 20px;
+
+  color: #76665a; /* Muted Taupe */
+}
+
+.icon-card:has(.icon:hover) h2 {
+  color: #b85c3a; /* Burnt Terracotta */
+}

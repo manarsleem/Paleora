@@ -1,0 +1,459 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f6efe3;
+  perspective: 400px;
+}
+.top-bar {
+  width: 93%;
+  height: 30px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #f6efe3;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.top-bar a {
+  position: relative;
+  transform-style: preserve-3d;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #632f2f;
+  font-size: 18px;
+}
+.top-bar a::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 0;
+  background-color: #b85c3a;
+  left: 0;
+  bottom: 0px;
+  transition: 1s ease;
+  margin: 5px 0;
+}
+.top-bar a::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 0;
+  background-color: #b85c3a;
+  right: 0;
+  top: 0;
+  transition: 1s ease;
+  margin: 5px 0;
+}
+.top-bar a:hover::after,
+.top-bar a:hover::before {
+  height: 70%;
+}
+.top-bar a:hover i,
+.top-bar a:hover {
+  color: #b85c3a;
+  transform: rotateY(180deg);
+}
+/* ////////////////////////////////// */
+.sec-bar {
+  width: 100%;
+  height: 70px;
+  background-color: #f6efe3;
+  display: flex;
+  justify-content: space-around;
+}
+.sec-bar nav .main-menue {
+  display: flex;
+  margin: 5px;
+}
+.sec-bar nav .main-menue .main-items {
+  position: relative;
+
+  display: inline-block;
+
+  padding: 20px;
+  margin-top: -18px;
+
+  text-decoration: none;
+  color: #632f2f;
+}
+
+/* =========================
+   Vertical Borders
+========================= */
+
+.sec-bar nav .main-menue .main-items::before,
+.sec-bar nav .main-menue .main-items::after {
+  content: "";
+  position: absolute;
+
+  width: 2px;
+  height: 0;
+
+  background-color: #b85c3a;
+
+  transition: height 0.4s ease;
+  margin-left: -5px;
+  margin-right: -13px;
+}
+/* Left vertical line */
+
+.sec-bar nav .main-menue .main-items::before {
+  left: 0;
+  bottom: 0;
+}
+
+/* Right vertical line */
+
+.sec-bar nav .main-menue .main-items::after {
+  right: 0;
+  bottom: 0;
+}
+
+/* =========================
+   Horizontal Borders
+========================= */
+.sec-bar nav .main-menue > li {
+  position: relative;
+  width: fit-content;
+  padding: 15px;
+  list-style: none;
+  font-size: 20px;
+}
+.sec-bar nav .main-menue > li::before,
+.sec-bar nav .main-menue > li::after {
+  content: "";
+  position: absolute;
+
+  width: 0;
+  height: 2px;
+
+  background-color: #b85c3a;
+
+  transition: width 0.4s ease;
+  margin: 0 10px;
+  margin-bottom: 16px;
+}
+
+/* Top horizontal line */
+
+.sec-bar nav .main-menue > li::before {
+  left: 0;
+  top: 0;
+}
+
+/* Bottom horizontal line */
+
+.sec-bar nav .main-menue > li::after {
+  left: 0;
+  bottom: 0;
+}
+
+/* =========================
+   Hover
+========================= */
+
+.sec-bar nav .main-menue > li:hover .main-items::before,
+.sec-bar nav .main-menue > li:hover .main-items::after {
+  height: 90%;
+}
+
+.sec-bar nav .main-menue > li:hover::before,
+.sec-bar nav .main-menue > li:hover::after {
+  width: 92%;
+}
+.sec-bar nav .main-menue > li:hover .main-items {
+  color: #b85c3a;
+}
+.sec-bar .main-menue .main-drop-menue .main-items i {
+  font-size: 16px;
+}
+
+.main-drop-menue {
+  /* margin-bottom: 20px; */
+  position: relative;
+}
+.drop-menue {
+  position: absolute;
+  top: 63px;
+  left: -60px;
+  width: 350px;
+  height: 230px;
+  display: flex;
+  background-color: #f6efe3;
+  border: 2px solid #632f2f;
+  border-radius: 10px;
+  color: #632f2f;
+  visibility: hidden;
+  padding: 10px;
+  z-index: 5;
+}
+.main-drop-menue:hover .drop-menue {
+  visibility: visible;
+  transition: 2s ease;
+}
+.main-drop-menue .drop-menue .rigth-side,
+.main-drop-menue .drop-menue .left-side {
+  margin-bottom: 5px;
+  border-bottom: 2px dotted #b85c3a;
+  color: #b85c3a;
+  width: fit-content;
+  padding: 10px;
+}
+.main-drop-menue .drop-menue ul li {
+  padding: 5px 10px;
+  list-style: none;
+}
+.main-drop-menue .drop-menue ul li a {
+  font-size: 18px;
+  padding: 2px;
+  line-height: 5px;
+  text-decoration: none;
+  color: #632f2f;
+}
+.main-drop-menue .drop-menue ul li a:hover {
+  color: #b85c3a;
+  font-size: 19px;
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+
+/* icons */
+.sec-bar .sec-bar-icons i {
+  margin-top: 22px;
+  margin-right: 22px;
+  color: #632f2f;
+  font-size: 25px;
+}
+.sec-bar .sec-bar-icons i:hover {
+  color: #b85c3a;
+  /* transform: scale(1.2);
+  transition: 0.2s ease; */
+}
+
+.sec-bar .sec-bar-icons .Saved-Species {
+  position: relative;
+}
+.sec-bar .sec-bar-icons .Saved-Species sup {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: -150%;
+  left: 10px;
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 50%;
+  text-decoration: none;
+  text-align: center;
+  background-color: #632f2f;
+  color: #f6efe3;
+}
+.sec-bar .sec-bar-icons a:hover sup {
+  /* padding-bottom:20px ; */
+  /* transform: scale(1.15); */
+  transform: translateY(-5px);
+  background-color: #b85c3a;
+}
+/* //////////////////thrid-bar///////////////////////// */
+.thrid-bar {
+  width: 100%;
+  height: 30px;
+  background-color: #632f2f;
+  color: #f6efe3;
+  text-align: center;
+}
+.thrid-bar p {
+  font-size: 20px;
+}
+.thrid-bar span {
+  font-size: 25px;
+  padding-bottom: 5px;
+  color: #ccb791;
+  text-decoration: underline;
+}
+.thrid-bar span:hover {
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  transform: scale(1.15);
+  transition: 0.2s;
+}
+
+/* =========================
+   HOME PAGE 
+========================= */
+
+.home-container {
+  width: 100%;
+  height: 90vh;
+  background: url(https://i.postimg.cc/wBpn3jNH/home-img.png) no-repeat center center;
+  background-size: cover;
+  position: relative;
+
+  animation: homeBackground 8s ease-in-out infinite alternate;
+}
+
+.home-overlay {
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(246, 239, 227, 0.3);
+}
+
+/* ================= HOME CONTENT ================= */
+
+.home-content {
+  position: absolute;
+  width: 40%;
+  height: auto;
+  top: 30%;
+  left: 5%;
+  text-align: center;
+
+  animation: contentShow 1.2s ease forwards;
+}
+
+/* ================= TITLE ================= */
+
+.home-content h2 {
+  padding: 20px;
+  font-size: 40px;
+  font-style: italic;
+  color: #76665a;
+
+  animation: titleShow 1s ease 0.3s both;
+}
+
+/* ================= PARAGRAPH ================= */
+
+.home-content p {
+  font-size: 24px;
+  padding-bottom: 20px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+
+  color: #29221e;
+
+  animation: paragraphShow 1s ease 0.6s both;
+}
+
+/* ================= BUTTON ================= */
+
+.home-content .home-btn {
+  padding: 20px;
+  font-size: 16px;
+  border-radius: 15px;
+  background-color: #632f2f;
+  color: #f6efe3;
+  font-style: italic;
+  border: none;
+  border-radius: 20px 5px 20px 5px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  cursor: pointer;
+
+  animation: buttonShow 1s ease 0.9s both;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* ================= BUTTON BEFORE ================= */
+
+.home-content .home-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #e3d0b5;
+  transform: translateX(-100%);
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  z-index: -1;
+}
+
+.home-content .home-btn:hover::before {
+  transform: translateX(0);
+}
+
+.home-content .home-btn:hover {
+  color: #632f2f;
+
+  transform: translateY(-4px) scale(1.05);
+
+  box-shadow: 0 8px 20px rgba(99, 47, 47, 0.25);
+}
+
+/* ================= KEYFRAMES ================= */
+
+/* ظهور الـ content من الشمال */
+
+@keyframes contentShow {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* الـ heading */
+
+@keyframes titleShow {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* الـ paragraph */
+
+@keyframes paragraphShow {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* الـ button */
+
+@keyframes buttonShow {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes homeBackground {
+  from {
+    background-position: center center;
+  }
+
+  to {
+    background-position: center 52%;
+  }
+}

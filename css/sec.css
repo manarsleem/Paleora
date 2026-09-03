@@ -1,0 +1,482 @@
+/* ====================== sec 1 ================================== */
+
+.sec-1 {
+  margin-top: 40px;
+}
+
+.sec1-container {
+  width: 90%;
+  height: 600px;
+  margin: auto;
+}
+
+.sec1-cards {
+  display: flex;
+}
+
+.sec1-cards .sec1-card {
+  width: 30%;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  margin: 30px;
+  border-radius: 80px 30px 80px 30px;
+}
+
+.sec1-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 80px 30px 80px 30px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.sec1-card:hover img {
+  transform: scale(1.2);
+}
+
+.sec1-cards .sec1-card .card-content {
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  padding: 50px 25px 25px;
+  color: #f6efe3;
+  border-radius: 0px 0px 80px 20px;
+  z-index: 2;
+  background: linear-gradient(transparent, rgba(99, 47, 47, 0.85));
+}
+
+.sec1-card .card-content h2 {
+  margin: 0 0 8px;
+  font-size: 45px;
+  color: #f6efe3;
+  transform: translateY(25px);
+  transition: 0.4s;
+}
+
+.sec1-card:hover .card-content h2 {
+  transform: translateY(0);
+}
+
+.sec1-card .card-content a {
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: #ccb791;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0;
+  padding-bottom: 5px;
+  transform: translateY(25px);
+  transition: 0.4s;
+  position: relative;
+}
+.sec1-card .card-content .under-line::after {
+  content: "";
+  position: absolute;
+  bottom: -5%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  border-bottom: 4px solid #ccb791;
+}
+.sec1-card:hover .card-content a {
+  opacity: 1;
+  transform: translateY(0);
+}
+.sec1-card .card-content a:hover {
+  letter-spacing: 2px;
+  transition: 0.2s ease;
+}
+
+/* ================================sec2============================ */
+.sec-2 {
+  margin-top: 20px;
+}
+
+.sec2-container {
+  width: 90%;
+  height: 700px;
+  margin: auto;
+}
+
+/* ================= HEAD ================= */
+
+.head-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 5px 20px;
+}
+
+.head-content .right-head-content > h2 {
+  font-size: 35px;
+  margin-left: 20px;
+  color: #632f2f; /* Deep Burgundy */
+}
+
+.head-content .left-head-content ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.head-content .left-head-content ul li {
+  list-style: none;
+  padding: 20px;
+}
+
+.head-content .left-head-content ul li a {
+  text-decoration: none;
+  position: relative;
+  font-size: 22px;
+  font-weight: bold;
+  color: #632f2f; /* Deep Burgundy */
+}
+
+.left-head-content ul li a.line-under {
+  color: #b85c3a; /* Burnt Terracotta */
+}
+
+.left-head-content ul li .line-under::after {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  border-bottom: 4px solid #b85c3a; /* Burnt Terracotta */
+}
+
+/* ================= LINE ================= */
+
+.sec2-line {
+  width: 95%;
+  height: 2px;
+  background: #632f2f; /* Antique Bronze */
+  margin: auto;
+}
+
+/* ================= BODY ================= */
+
+.body-content {
+  width: 100%;
+  height: 700px;
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+}
+
+/* ================= ARROWS ================= */
+
+.body-content .left-icon,
+.body-content .right-icon {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+  margin-top: 170px;
+  text-decoration: none;
+  color: #632f2f; /* Deep Burgundy */
+  font-size: 22px;
+
+  border: 2px solid #9a7652; /* Antique Bronze */
+  border-radius: 50%;
+
+  transition: 0.3s;
+}
+
+.body-content .left-icon:hover,
+.body-content .right-icon:hover {
+  background-color: #632f2f; /* Deep Burgundy */
+  color: #f6efe3; /* Fossil Cream */
+  border-color: #632f2f;
+}
+
+/* ================= CARDS ================= */
+
+.body-content .body-cards {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+/* ================= CARD ================= */
+
+.body-cards .body-card {
+  width: 30%;
+  height: 600px;
+  margin: 10px;
+  perspective: 1000px;
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+/* ================= FLIP AREA ================= */
+
+.body-cards .body-card .img-card {
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+
+.body-cards .body-card .img-card img {
+  width: 100%;
+  height: 450px;
+
+  object-fit: cover;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+
+  border-radius: 50px 20px 50px 20px;
+}
+
+/* ================= BACK ================= */
+
+.body-cards .body-card .img-card .img-back {
+  position: absolute;
+  width: 100%;
+  height: 450px;
+  top: 0%;
+  left: 0%;
+
+  z-index: 2;
+  border-radius: 50px 20px 50px 20px;
+
+  transform: rotateY(180deg);
+
+  backface-visibility: hidden;
+
+  transform-origin: center;
+
+  transition: transform 0.8s ease;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.body-cards .body-card .img-card:hover .img-back {
+  backface-visibility: visible;
+   transform: rotateY(0deg);
+}
+
+/* ================= BACK IMAGES ================= */
+
+.body-cards .body-card .img-card .img1 {
+  background: url("https://i.postimg.cc/J0N09tmk/Sec2-Smilodon2.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.body-cards .body-card .img-card .img2 {
+  background: url("https://i.postimg.cc/BQcJgkCS/sec1-img2.png") no-repeat center center;
+  background-size: cover;
+}
+
+.body-cards .body-card .img-card .img3 {
+  background: url("https://i.postimg.cc/sxxg8cfY/sec1-img1.png") no-repeat center center;
+  background-size: cover;
+}
+
+.body-cards .body-card .img-card .img4 {
+  background: url("https://i.postimg.cc/vH7xK2HX/sec4-hover-Megalodon.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/* ================= FLIP ================= */
+
+.body-card:has(.img-card:hover) .body-card-info h2 {
+  color: #b85c3a; /* Deep Burgundy */
+}
+
+/* ================= ICONS ================= */
+
+.body-cards .body-card .img-card .img-back a {
+  text-decoration: none;
+}
+
+.body-cards .body-card .img-card .img-back i {
+  font-size: 25px;
+
+  margin: 10px;
+  margin-left: 20px;
+  margin-top: 300px;
+  padding: 20px;
+
+  border-radius: 20px 10px 20px 10px;
+
+  background-color: #632f2f; /* Deep Burgundy */
+  color: #f6efe3; /* Fossil Cream */
+
+  transition: 0.3s;
+}
+
+.body-cards .body-card .img-card .img-back i:hover {
+  background-color: #b85c3a; /* Burnt Terracotta */
+  color: #f6efe3;
+  transform: translateY(-5px);
+}
+
+/* ================= CARD INFO ================= */
+
+.body-cards .body-card .body-card-info {
+  background-color: #f6efe3; /* Fossil Cream */
+  text-align: center;
+  height: 100px;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.body-cards .body-card .body-card-info h2 {
+  margin-bottom: 10px;
+  color: #632f2f; /* Deep Burgundy */
+  font-size: 26px;
+}
+
+.body-cards .body-card .body-card-info h3 {
+  padding-top: 5px;
+  color: #76665a; /* Muted Taupe */
+  font-size: 18px;
+}
+
+/* ============================= sec 3 ================================ */
+.sec-3 {
+  margin-top: 50px;
+}
+
+.sec3-container {
+  width: 100%;
+
+  height: 500px;
+
+  margin: auto;
+
+  background-color: #632f2f; /* Deep Burgundy */
+
+  color: #f6efe3; /* Fossil Cream */
+}
+
+.sec3-container > h2 {
+  text-align: center;
+
+  font-style: italic;
+
+  font-size: 30px;
+
+  padding-top: 50px;
+
+  color: #f6efe3; /* Fossil Cream */
+}
+
+.sec3-content {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-content: center;
+
+  margin-top: 50px;
+}
+
+.sec3-content .left-icon,
+.sec3-content .right-icon {
+  width: 45px;
+
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-decoration: none;
+
+  color: #f6efe3; /* Fossil Cream */
+
+  font-size: 22px;
+
+  margin: 50px;
+
+  border: 2px solid #e3d0b5; /* Warm Sand */
+
+  border-radius: 50%;
+
+  transition: 0.3s;
+}
+
+.sec3-content .left-icon:hover,
+.sec3-content .right-icon:hover {
+  background-color: #e3d0b5; /* Warm Sand */
+
+  color: #632f2f; /* Deep Burgundy */
+}
+
+.sec3-content .sec3-middel-content {
+  width: 70%;
+
+  font-size: 20px;
+
+  color: #f6efe3; /* Fossil Cream */
+}
+
+.sec3-content .sec3-middel-content p {
+  text-align: center;
+
+  font-size: 20px;
+
+  margin-bottom: 30px;
+
+  color: #e3d0b5; /* Warm Sand */
+}
+
+.sec3-content .sec3-middel-content .middel-content-bottom {
+  margin-top: 40px;
+
+  width: 40%;
+
+  display: flex;
+
+  align-content: center;
+
+  gap: 20px;
+
+  text-align: right;
+
+  margin: auto;
+}
+
+.middel-content-info h2 {
+  margin-bottom: 15px;
+
+  margin-top: 20px;
+
+  font-size: 35px;
+
+  color: #f6efe3; /* Fossil Cream */
+}
+
+.sec3-middel-content .middel-content-bottom img {
+  border-radius: 60px 20px 60px 20px;
+
+  margin-right: 20px;
+}
+
+.sec3-middel-content .middel-content-bottom img:hover {
+  transform: scale(1.1);
+
+  transition: 0.2s;
+}
+
+.middel-content-bottom:has(img:hover) .middel-content-info h2,
+.middel-content-bottom:has(img:hover) .middel-content-info p {
+  transform: scale(1.1);
+}
