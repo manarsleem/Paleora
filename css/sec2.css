@@ -323,9 +323,9 @@
 .sec5-cards .sec5-card:has(img:hover) .sec5-card-info a {
  color: #b85c3a; /* Burnt Terracotta */
 
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
 
-  margin-left: 15px;
+  margin-left: 5px;
 }
 .sec5-cards .sec5-card:hover .sec5-card-info h3{
   color: #b85c3a; /* Burnt Terracotta */
